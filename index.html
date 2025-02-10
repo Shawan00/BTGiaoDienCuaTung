@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grabit</title>
+
+        <link rel="stylesheet" href="asset/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel='stylesheet'
+            href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+        <link rel='stylesheet'
+                href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel="stylesheet" href="asset/base.css">
+        <link rel="stylesheet" href="asset/styles.css">
+        
+    <body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">                    
+                    <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"><i class="fi fi-rr-circle-xmark"></i> </button>
+                    
+                    <div class="modal-body">
+                        <div class="image">
+                            <img src="https://grabit-react-next.maraviyainfotech.com/assets/img/bg/newsletter.png" alt="">
+                        </div>
+                        <div class="form">
+                            <div class="title">Newsletter.</div>
+                            <p>Subscribe to Masterkat to stay updated.</p>
+                            <form novalidate>
+                                <input type="email" placeholder="Email Address" required name="email" id="email">
+                                <div class="invalid-feedback"></div>
+                                <button type="submit" name="subscribe">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="pre-header">
+            <div class="content">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <div class="buy-now">
+                    <a href="#">Buy now</a>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="header-1">
+                <div class="container">
+                    <div class="inner-contact">
+                        <div class="phone">
+                            <a href="#"><i class="fi fi-rr-phone-call"></i></a>
+                            <span>+91 987 654 3210</span>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="#"><i class="fi fi-brands-whatsapp"></i></a>
+                            <span>+91 987 654 3210</span>
+                        </div>
+                        
+                    </div>
+                    <div class="inner-message">
+                        <div class="header-message">World's Fastest Online
+                            Shopping Destination</div>
+                    </div>
+                    <div class="inner-help">
+                        <a href="#">Help?</a>
+                        <a href="#">Track Order?</a>
+                        <div class="language dropdown">
+                            <button class="dropdown-toggler" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+                                English
+                                <i class="fi fi-rr-angle-small-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Italian</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency dropdown">
+                            <button data-bs-toggle="dropdown">
+                                Dollar
+                                <i class="fi fi-rr-angle-small-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">USD $</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">EUR €</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-2">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="https://grabit-react-next.maraviyainfotech.com/assets/img/logo/logo.png" alt="">
+                    </a>
+                    <div class="search">
+                        <form action="#" class="">
+                            <input type="text" placeholder="Search Products...">
+                            <button type="submit"><i class="fi fi-rr-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="action">
+                        <div class="account dropdown">
+                            <a href="#" class="dropdown-toggler">
+                                <i class="fi fi-rr-user"></i>
+                                <div class="desc">
+                                    <span>Account</span>
+                                    <span style="color: #4b5966;">LOGIN</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Register</a></li>
+                                <li><a href="#" class="dropdown-item">Checkout</a></li>
+                                <li><a href="#" class="dropdown-item">Logout</a></li>
+                            </ul>                            
+                        </div>
+                        <div class="wishlist">
+                            <a href="#">
+                                <i class="fi fi-rr-heart"></i>
+                                <div class="desc">
+                                    <span>Wishlist</span>
+                                    <span style="color: #4b5966;"><b>3-</b>ITEMS</span>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="cart">
+                            <a href="#">
+                                <i class="fi fi-rr-shopping-bag"></i>
+                                <div class="desc">
+                                    <span>Cart</span>
+                                    <span style="color: #4b5966;"><b>3-</b>ITEMS</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="header-3">
+                <div class="container">
+                    <div class="category dropdown">
+                        <a href="#" data-bs-toggle="dropdown">
+                            <i class="fi fi-rr-apps"></i>
+                            <span>All Categories</span>
+                            <i class="fi fi-rr-angle-small-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="d-flex align-items-stretch block">
+                                <div class="nav flex-column nav-pills me-3 tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active text-start mb-2" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                        <i class="fi fi-rr-cupcake me-2"></i> Dairy & Bakery
+                                    </button>
+                                    <button class="nav-link text-start mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fi fi-rr-apple-whole"></i> Fruits & Vegetable</button>
+                                    <button class="nav-link text-start mb-2" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fi fi-rr-popcorn"></i> Snack & Spice</button>
+                                    <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fi fi-rr-drink-alt"></i> Juice & Drinks</button>
+                                </div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col dairy">
+                                            <h6>Dairy</h6>
+                                            <ul>
+                                                <li>Cauliflower</li>
+                                                <li>Bell Peppers</li>
+                                                <li>Broccoli</li>
+                                                <li>Cabage</li>
+                                                <li>Tomato</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col bakery">
+                                            <h6>Bakery</h6>
+                                            <ul>
+                                                <li>Cake And Pastry</li>
+                                                <li>Rusk Toast</li>
+                                                <li>Bread & Buns</li>
+                                                <li>Chocolate Brownie</li>
+                                                <li>Cream Roll</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col dairy">
+                                            <h6>Fruits</h6>
+                                            <ul>
+                                                <li>Cauliflower</li>
+                                                <li>Bell Peppers</li>
+                                                <li>Broccoli</li>
+                                                <li>Cabage</li>
+                                                <li>Tomato</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col bakery">
+                                            <h6>Vegetable</h6>
+                                            <ul>
+                                                <li>Cake And Pastry</li>
+                                                <li>Rusk Toast</li>
+                                                <li>Bread & Buns</li>
+                                                <li>Chocolate Brownie</li>
+                                                <li>Cream Roll</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col dairy">
+                                            <h6>Snack</h6>
+                                            <ul>
+                                                <li>Cauliflower</li>
+                                                <li>Bell Peppers</li>
+                                                <li>Broccoli</li>
+                                                <li>Cabage</li>
+                                                <li>Tomato</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col bakery">
+                                            <h6>Spice</h6>
+                                            <ul>
+                                                <li>Cake And Pastry</li>
+                                                <li>Rusk Toast</li>
+                                                <li>Bread & Buns</li>
+                                                <li>Chocolate Brownie</li>
+                                                <li>Cream Roll</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col dairy">
+                                            <h6>Juice</h6>
+                                            <ul>
+                                                <li>Cauliflower</li>
+                                                <li>Bell Peppers</li>
+                                                <li>Broccoli</li>
+                                                <li>Cabage</li>
+                                                <li>Tomato</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col bakery">
+                                            <h6>Drinks</h6>
+                                            <ul>
+                                                <li>Cake And Pastry</li>
+                                                <li>Rusk Toast</li>
+                                                <li>Bread & Buns</li>
+                                                <li>Chocolate Brownie</li>
+                                                <li>Cream Roll</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>                      
+                    </div>
+                    <div class="menu">
+                        <ul class="menu">
+                            <li class="home">
+                                <div class="dropdown">
+                                    <a href="#">Home <i class="fi fi-rr-angle-small-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Grocery</a></li>
+                                        <li><a href="#" class="dropdown-item">Fashion</a></li>
+                                        <li><a href="#" class="dropdown-item">Fashion 2</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </li>
+                            <li class="categories">
+                                <div class="dropdown">
+                                    <a href="#">Categories <i class="fi fi-rr-angle-small-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h6>Classics</h6>
+                                                <ul>
+                                                    <li><a href="#">Left Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Left Sidebar 4 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 4 Column</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <h6>Banner</h6>
+                                                <ul>
+                                                    <li><a href="#">Left Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Left Sidebar 4 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 4 Column</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <h6>Columns</h6>
+                                                <ul>
+                                                    <li><a href="#">Left Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Left Sidebar 4 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 4 Column</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <h6>List</h6>
+                                                <ul>
+                                                    <li><a href="#">Left Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Left Sidebar 4 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 3 Column</a></li>
+                                                    <li><a href="#">Right Sidebar 4 Column</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="products">
+                                <div class="dropdown">
+                                    <a href="#" data-bs-toggle="dropdown">Products <i class="fi fi-rr-angle-small-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Product Page</a></li>
+                                        <li><a href="#" class="dropdown-item">Product According</a></li>
+                                        <li><a href="#" class="dropdown-item">Product Full Width</a></li>
+                                        <li><a href="#" class="dropdown-item">According Full Width</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blog">
+                                <div class="dropdown">
+                                    <a href="#" data-bs-toggle="dropdown">Blog <i class="fi fi-rr-angle-small-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Product Page</a></li>
+                                        <li><a href="#" class="dropdown-item">Product According</a></li>
+                                        <li><a href="#" class="dropdown-item">Product Full Width</a></li>
+                                        <li><a href="#" class="dropdown-item">According Full Width</a></li>
+                                    </ul>
+                                </div>                            
+                            </li>
+                            <li class="pages">
+                                <div class="dropdown">
+                                    <a href="#" data-bs-toggle="dropdown">Pages <i class="fi fi-rr-angle-small-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">About us</a></li>
+                                        <li><a href="#" class="dropdown-item">Contact us</a></li>
+                                        <li><a href="#" class="dropdown-item">Cart</a></li>
+                                        <li><a href="#" class="dropdown-item">Checkout</a></li>
+                                        <li><a href="#" class="dropdown-item">Orders</a></li>
+                                        <li><a href="#" class="dropdown-item">Compare</a></li>
+                                        <li><a href="#" class="dropdown-item">FAQ</a></li> <br>
+                                        <li><a href="#" class="dropdown-item">Login</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="offers"><a href="#"><i class="fi fi-rr-badge-percent"></i> Offers</a></li>
+                        </ul>
+                    </div>
+                                       
+                    <div class="location">
+                        <a href="#">
+                            <i class="fi fi-rr-marker"></i>
+                            <span>New York</span>
+                            <i class="fi fi-rr-angle-small-down"></i>
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section-1">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="slide-tittle">
+                                <div class="price">Starting at <b>$ 20.00</b></div>
+                                <div class="tittle">Organic & healthy vegetables</div>
+                                <a href="#">Shop now <i class="fi fi-rr-angle-double-small-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <div class="slide-tittle">
+                                <div class="price">Starting at <b>$ 29.99</b></div>
+                                <div class="tittle">Explore fresh & juicy fruits</div>
+                                <a href="#">Shop now <i class="fi fi-rr-angle-double-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>              
+                </div>
+            </div>            
+        </div>
+
+        <div class="section-2">
+                <div class="container">
+                    <div class="swiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-1">
+                                <div class="cat-icon">
+                                    <span>30%</span>
+                                    <i class="fi fi-tr-peach"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Fruits</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-2">
+                                <div class="cat-icon">
+                                    <span>30%</span>
+                                    <i class="fi fi-tr-bread"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Bakery</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-3">
+                                <div class="cat-icon">
+                                    <i class="fi fi-tr-egg"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Eggs</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-4">
+                                <div class="cat-icon">
+                                    <i class="fi fi-tr-corn"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Vegetables</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-5">
+                                <div class="cat-icon">
+                                    <span>20%</span>
+                                    <i class="fi fi-tr-coffee-pot"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Dairy & Milk</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-6">
+                                <div class="cat-icon">
+                                    <i class="fi fi-tr-french-fries"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Snack & Spice</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-7">
+                                <div class="cat-icon">
+                                    <span>15%</span>
+                                    <i class="fi fi-tr-hamburger-soda"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Juice & Drinks</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-8">
+                                <div class="cat-icon">
+                                    <i class="fi fi-tr-shrimp"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Seafood</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-9">
+                                <div class="cat-icon">
+                                    <span>10%</span>
+                                    <i class="fi fi-tr-popcorn"></i>
+                                    <div class="cat-detail">
+                                        <a href="#">Fastfood</a>
+                                        <p>320 items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="section-3">
+            <div class="container">
+                <div class="header">
+                    <div class="inner-text">
+                        <h3>Day Of The <span>Deal</span></h3>
+                        <p>Don't wait. The time will never be just right</p>
+                    </div>
+                    <div class="timer">
+                        <div class="dealend-timer" id="dealend">
+                            <div class="day-num"></div>
+                            <span class="day">Days</span>
+                            <div class="hour-num"></div>
+                            <span><b>:</b></span>
+                            <div class="minute-num"></div>
+                            <span><b>:</b></span>
+                            <div class="second-num"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="swiper-3">
+                        <div class="swiper-wrapper">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
