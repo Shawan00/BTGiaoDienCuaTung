@@ -14,12 +14,13 @@
 
 .fade .modal-dialog .modal-content .modal-body {
     padding: 20px 30px;
+    height: fit-content;
     display: flex;
 }
 
 .fade .modal-dialog .modal-content .modal-body img {
-    width: 17vw;
-    height: auto;
+    width: auto;
+    height: 15rem;
     border-radius: 8px;
 }
 
@@ -79,9 +80,9 @@
     background-color: var(--bg-color);
     width: 100%;
     height: 55px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1055;
 }
 
 .content {
@@ -121,6 +122,7 @@
 
 .header-1 {
     background-color: #f8f8fb;
+    overflow: hidden;
 }
 
 .header-1 .container{
@@ -150,24 +152,24 @@
 
 .header-1 .container .inner-contact div span {
     color: #777777;
-    font-size: 13px;
-    font-weight: 40 0;    
+    font-size: 0.85rem;
+    font-weight: 400;    
 }
 
 .header-1 .container .inner-message .header-message{
     color: #777777;
-    font-size: 13px;
+    font-size: 0.85rem;
 }
 
 .header-1 .container .inner-help {
     display: flex;
-    width: 23%;
+    width: 300px;
     justify-content: space-between;
 }
 
 .header-1 .container .inner-help a {
     color: #777777;
-    font-size: 13px;
+    font-size: 0.85rem;
     transition: all 0.5s ease;
     display: flex;
     align-items: center;
@@ -178,7 +180,7 @@
 
 .header-1 .container .inner-help div button {
     color: #777777;
-    font-size: 13px;
+    font-size: 0.85rem;
     transition: all 0.3s ease;
 }
 
@@ -193,16 +195,18 @@
 .header-2 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-2 .container .logo img {
-    width: 144px;
+    width: 9rem;
     height: auto;
 }
 
 .header-2 .container .search form {
-    height: 50px;
+    height: 3.1rem;
     border: 1px solid #eee;
+    margin: 0 2vw;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -220,7 +224,7 @@
 }
 
 .header-2 .container .action {
-    width: 20vw;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -249,6 +253,10 @@
 .header-2 .container .action div a .desc {
     display: flex;
     flex-direction: column;
+}
+
+.header-2 .container .action div a .desc span {
+    font-size: 0.85rem;
 }
 
 .header-2 .container .action .dropdown-menu {
@@ -505,17 +513,19 @@
 .section-1 .container .swiper {
     width: 100%;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 .section-1 .container .swiper .slide-1 {
     background-image: url(https://grabit-react-next.maraviyainfotech.com/assets/img/hero-bg/1.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .section-1 .container .swiper .slide-2 {
     background-image: url(https://grabit-react-next.maraviyainfotech.com/assets/img/hero-bg/2.jpg);
     background-position: center;
+    background-size: cover;
 
 }
 
@@ -575,7 +585,7 @@
     width: 100%;
     height: 170px;
     overflow: hidden;
-    margin: 80px 0;
+    margin: 4.5rem 0;
 }
 
 .section-2 .container .swiper-2 .swiper-wrapper .slide-1 {
@@ -666,7 +676,7 @@
 }
 
 .section-3 {
-    margin-bottom: 80px;
+    margin-bottom: 4.5rem;
 }
 
 .section-3 .container {
@@ -676,7 +686,9 @@
 .section-3 .container .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .section-3 .container .header .inner-text h3{
@@ -810,4 +822,5 @@
 
 .section-3 .container .body .swiper-wrapper .swiper-slide .description del {
     color: #777;
+    font-size: 0.9rem;
 }

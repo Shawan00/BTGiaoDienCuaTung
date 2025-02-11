@@ -33,10 +33,10 @@ async function fetchAPIProducts() {
                         <div class="inner-image">
                             <img src="${products[i].images[0]}" alt="${products[i].title}">
                             <div class="optional">
-                                <div class="icon"><a href="#"><i class="fi fi-rr-heart"></i></a></div>
-                                <div class="icon"><a href="#"><i class="fi fi-rr-eye"></i></a></div>
-                                <div class="icon"><a href="#"><i class="fi fi-rr-arrows-repeat"></i></a></div>
-                                <div class="icon"><a href="#"><i class="fi fi-rr-shopping-basket"></i></a></div>
+                                <div class="icon" title="Wishlist"><a href="#"><i class="fi fi-rr-heart"></i></a></div>
+                                <div class="icon" title="Quick view"><a href="#"><i class="fi fi-rr-eye"></i></a></div>
+                                <div class="icon" title="Compare"><a href="#"><i class="fi fi-rr-arrows-repeat"></i></a></div>
+                                <div class="icon" title="Add To Cart"><a href="#"><i class="fi fi-rr-shopping-basket"></i></a></div>
                             </div>
                         </div>
                         <div class="description">

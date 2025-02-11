@@ -11,6 +11,7 @@
 body {
     font-size: 16px;
     font-family: var(--font);
+    padding-top: 55px;
 }
 
 ul {
@@ -47,4 +48,10 @@ input:focus-visible {
 
 p {
     margin: 0;
+}
+
+.offcanvas {
+    top: 55px !important;
+    height: calc(100vh - 55px);
+    width: 332px !important;
 }

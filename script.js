@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const promoModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-    promoModal.show();   
+    // promoModal.show();   
 });
 
 //timer
@@ -66,6 +66,29 @@ const swiper2 = new Swiper('.swiper-2', {
         disableOnInteraction: false,
     },
     speed: 2000,
+    breakpoints: {
+        1400: {
+            slidesPerView: 6
+        },
+        1200: {
+            slidesPerView: 5
+        },
+        992: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        412: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        }
+    },
 });
 
 const swiper3 = new Swiper('.swiper-3', {
@@ -74,4 +97,22 @@ const swiper3 = new Swiper('.swiper-3', {
     freeMode: false,
     slidesPerView: 5,
     spaceBetween: 30,
+    breakpoints: {
+        1400: {
+            slidesPerView: 5
+        },
+        992: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3
+        },
+        412: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        }
+    },
 });

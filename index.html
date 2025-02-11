@@ -20,7 +20,8 @@
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
         <link rel="stylesheet" href="asset/base.css">
         <link rel="stylesheet" href="asset/styles.css">
-        
+        <link rel="stylesheet" href="asset/responsive.css">
+    </head>
     <body>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -102,7 +103,86 @@
                             </ul>
                         </div>
                     </div>
-
+                    <div class="right-button d-lg-none d-flex">
+                        <div class="shortcut d-flex">
+                            <a href="#"><i class="fi fi-rr-user"></i></a>
+                            <a href="#"><i class="fi fi-rr-heart"></i></a>
+                            <a href="#"><i class="fi fi-rr-shopping-bag"></i></a>
+                        </div>
+                        <div class="menu">
+                            <a href="#offcanvasMenu" data-bs-toggle="offcanvas" role="button"><i class="fi fi-rr-menu-burger"></i></a>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul id="parentCollapse">
+                                        <li>
+                                            <a href="#home" data-bs-toggle="collapse" role="button" aria-expanded="false">Home <i class="fi fi-rr-plus-small"></i></a>
+                                            <div class="collapse" id="home" data-bs-parent="#parentCollapse">
+                                                <div class="collapse-content">
+                                                    <ul>
+                                                        <li><a href="#">Grocery</a></li>
+                                                        <li><a href="#">Fashion</a></li>
+                                                        <li><a href="#">Fashion 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#categories" data-bs-toggle="collapse" role="button" aria-expanded="false">Categories <i class="fi fi-rr-plus-small"></i></a>
+                                            <div class="collapse" id="categories" data-bs-parent="#parentCollapse">
+                                                <div class="collapse-content">
+                                                    <ul>
+                                                        <li><a href="#">Grocery</a></li>
+                                                        <li><a href="#">Fashion</a></li>
+                                                        <li><a href="#">Fashion 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#products" data-bs-toggle="collapse" role="button" aria-expanded="false">Products <i class="fi fi-rr-plus-small"></i></a>
+                                            <div class="collapse" id="products" data-bs-parent="#parentCollapse">
+                                                <div class="collapse-content">
+                                                    <ul>
+                                                        <li><a href="#">Grocery</a></li>
+                                                        <li><a href="#">Fashion</a></li>
+                                                        <li><a href="#">Fashion 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#blog" data-bs-toggle="collapse" role="button" aria-expanded="false">Blog <i class="fi fi-rr-plus-small"></i></a>
+                                            <div class="collapse" id="blog" data-bs-parent="#parentCollapse">
+                                                <div class="collapse-content">
+                                                    <ul>
+                                                        <li><a href="#">Grocery</a></li>
+                                                        <li><a href="#">Fashion</a></li>
+                                                        <li><a href="#">Fashion 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#page" data-bs-toggle="collapse" role="button" aria-expanded="false">Page <i class="fi fi-rr-plus-small"></i></a>
+                                            <div class="collapse" id="page" data-bs-parent="#parentCollapse">
+                                                <div class="collapse-content">
+                                                    <ul>
+                                                        <li><a href="#">Grocery</a></li>
+                                                        <li><a href="#">Fashion</a></li>
+                                                        <li><a href="#">Fashion 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
